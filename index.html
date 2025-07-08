@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A N N I Y A N</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="background-overlay"></div>
+
+    <header>
+        <h1 class="logo" data-text="ANNIYAN">ANNIYAN</h1>
+        <nav>
+            <button id="nav-home">Home</button>
+            <button id="nav-ledger">Book of Sins</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home-section" class="active">
+            <p class="tagline">"If you see a mistake and don't correct it, you are making a mistake yourself."</p>
+            <button id="report-btn" class="cta-button">REPORT AN INJUSTICE</button>
+            <div class="disclaimer">
+                <p><strong>⚠️ Warning:</strong> This is a fictional fan project and a tribute to the 2005 film
+                    'Anniyan'.</p>
+                <p>DO NOT submit information about real people or events. All submissions are fictional and stored only
+                    in your browser.</p>
+            </div>
+        </section>
+
+        <!-- Form Section -->
+        <section id="form-section">
+            <h2>The Ledger of Sins</h2>
+            <p>Your grievance has been noted. Provide the details.</p>
+            <form id="complaint-form">
+                <div class="form-group">
+                    <label for="offender">Name of the Offender (Fictional)</label>
+                    <input type="text" id="offender" name="offender" required>
+                </div>
+                <div class="form-group">
+                    <label for="injustice-type">The Injustice</label>
+                    <select id="injustice-type" name="injustice-type" required>
+                        <option value="Corruption / Bribery">Corruption / Bribery</option>
+                        <option value="Public Apathy">Public Apathy</option>
+                        <option value="Disrespecting Public Property">Disrespecting Public Property</option>
+                        <option value="Food Adulteration">Food Adulteration</option>
+                        <option value="Tax Evasion">Tax Evasion</option>
+                        <option value="Breaking Traffic Rules">Breaking Traffic Rules</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="details">Describe the Offense</label>
+                    <textarea id="details" name="details" rows="4" required></textarea>
+                </div>
+                <div class="disclaimer-form">
+                    This is a fictional submission. Real crimes must be reported to law enforcement.
+                </div>
+                <button type="submit" class="cta-button">SUBMIT FOR JUDGEMENT</button>
+            </form>
+        </section>
+
+        <!-- Ledger Section -->
+        <section id="ledger-section">
+            <h2>The Book of Sins</h2>
+            <p>All grievances are recorded. Judgement will be served.</p>
+            <div id="case-files-container">
+                <!-- Case files will be dynamically inserted here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>A fictional interactive project. Tribute to Director S. Shankar & Actor Vikram.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
